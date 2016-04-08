@@ -22,7 +22,7 @@ public class MyAdapter extends BaseAdapter{
     private int[] iconInts;
     private String[] titleStrings,detailStrings;
 
-    public MyAdapter(Context context, int[] iconInts, String[] titleString, String[] datailStrings) { // ait+insert
+    public MyAdapter(Context context, int[] iconInts, String[] titleString, String[] datailStrings) { // ait+insert  ตัวแปรตรงนี้คือ MainActivityjava ที่ส่งข้อมูลเข้ามา
         this.context = context;
         this.iconInts = iconInts;
         this.titleStrings = titleString;
