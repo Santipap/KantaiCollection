@@ -20,12 +20,12 @@ public class MyAdapter extends BaseAdapter{
     //Explicit ประกาศตัวแปร
     private Context context;
     private int[] iconInts;
-    private String[] titleString,detailStrings;
+    private String[] titleStrings,detailStrings;
 
     public MyAdapter(Context context, int[] iconInts, String[] titleString, String[] datailStrings) { // ait+insert
         this.context = context;
         this.iconInts = iconInts;
-        this.titleString = titleString;
+        this.titleStrings = titleString;
         this.detailStrings = datailStrings;
     }//ส่วนประกาศตัวแปร
 
@@ -56,7 +56,7 @@ public class MyAdapter extends BaseAdapter{
 
         //fot title
         TextView titleTextView = (TextView) view1.findViewById(R.id.textView2);
-        titleTextView.setText(titleString[i]);
+        titleTextView.setText(titleStrings[i]);
 
         //for detail
         TextView detailTextView = (TextView) view1.findViewById(R.id.textView3);
